@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "idroid";
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-color: rgba(144, 238, 144, 0.582);
+}
+
+/*CONFIGURAÇÕES DO HEADER*/
+
+header {
+    background-image: linear-gradient(to bottom, #458040, #294d26);
+    background-color: #458040;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+header >  h1 {
+    font-family: "Bebas Neue", "Oswald", sans-serif;
+    color: white;
+}
+
+/*CONFIGURAÇÕES DO MAIN*/
+
+main {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 0px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+section > p, article > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+}
+
+h1, h2 {
+    font-family: idroid;
+    color: #458040;
+}
+
+h1 {
+    font-size: 2em;
+    color: #294d26;
+    padding: 0px 0px 0px 10px;
+}
+
+h2 {
+    padding: 0px 0px 0px 10px;
+    background-image: linear-gradient(to right, #84f07a9d, #ffffff);
+}
+
+a {
+    color: #294d26;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a {
+    background-color: #84f07a9d;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+p > a::after {
+    content: ' 🔗';
+    color: lightgrey;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 0px;
+    padding: 10px;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.731);
+    border-radius: 10px;
+    color: #294d26;
+}
+
+nav {
+    text-align: left;
+}
+
+strong {
+    color: #376433;
+    font-weight: bold;
+}
+
+aside > p {
+    padding: 10px;
+}
+
+#conteudo-principal {
+    padding: 10px;
+}
+
+#video {
+    background-color: #294d26;
+    padding: 10px;
+}
+
+#adicional {
+    padding: 15px;
+}
+
+div#lista {
+    display: flex;
+}
+
+ul {
+    margin-right: 200px;
+}
+
+#adicional-dentro {
+    background-color: rgba(144, 238, 144, 0.55);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.24);
+}
+
+#adicional > p {
+    padding: 20px;
+}
+
+#adicional-dentro > p {
+    padding: 10px;
+}
+
+#mais {
+    background-color: #386533;
+    color: white;
+    padding: px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#ultimo {
+    padding: 10px;
+}
+
+/*CONFIGURAÇÕES DO FOOTER*/
+
+footer {
+    background-color: #294d26;
+    color: white;
+    padding: 0px;
+}
+
+footer > p {
+    text-align: center;
+    padding: 5px;
+}

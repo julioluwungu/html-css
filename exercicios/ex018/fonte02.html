@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Darling Girl";
+            src: url("fonts/DarlingGirlDemoRegular.ttf") format("truetype"), url("fonts/DarlingGirlDemoRegular.otf") format("opentype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /*
+        Tipos de Format()
+        
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-att (Apple Advanced Typography)
+        - svg
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Darling Girl', 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Fontes Baixadas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quod eveniet laboriosam amet libero, atque sed dolor similique labore culpa, sapiente error sit in facere maiores repellendus. Perferendis, hic quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum non dolor ullam eum ab animi quisquam repellendus molestiae iusto necessitatibus esse fuga excepturi, accusamus, nulla beatae distinctio reprehenderit sint.</p>
+</body>
+</html>
