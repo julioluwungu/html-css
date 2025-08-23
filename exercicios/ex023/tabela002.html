@@ -15,7 +15,7 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
 
@@ -27,16 +27,24 @@
         .numero {
             text-align: right;
         }
+
+        caption {
+            background-color: lightgrey;
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+        <caption>Tabela de Contagem Populacional</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -151,7 +159,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da População</th>
+                <th scope="row">Total da População</th>
                 <td class="numero"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>
