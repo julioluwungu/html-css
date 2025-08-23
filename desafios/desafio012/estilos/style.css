@@ -64,7 +64,7 @@ main > article > p {
     margin: 20px;
 }
 
-div#conteiner01 {
+div.conteiner {
     background: black url('../imagens/background001.jpg') right top no-repeat fixed;
     background-size: cover;
     position: relative;
@@ -72,33 +72,22 @@ div#conteiner01 {
     height: 70vw;
 }
 
-div#conteudo01 {
+div.conteudo {
     background-color: rgba(0, 0, 0, 0.413);
     position: absolute;
     padding: 10px;
-    padding-bottom: 10%;
     color: white;
     top: 10%;
     left: 5%;
     bottom: 10%;
 }
 
-div#conteiner02 {
-    background: black url('../imagens/background002.jpg') right top fixed;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 70vw;
+div#um {
+    background-image: url('../imagens/background001.jpg');
 }
 
-div#conteudo02 {
-    background-color: rgba(0, 0, 0, 0.413);
-    position: absolute;
-    color: white;
-    padding: 10px;
-    top: 10%;
-    left: 5%;
-    bottom: 10%;
+div#dois {
+    background-image: url('../imagens/background002.jpg');
 }
 
 /* CONFIGURAÇÕES DO FOOTER */
