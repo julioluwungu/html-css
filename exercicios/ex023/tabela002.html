@@ -12,6 +12,7 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
 
         thead, tfoot {
@@ -24,6 +25,12 @@
             padding: 10px;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
         .numero {
             text-align: right;
         }
@@ -33,6 +40,14 @@
             padding: 10px;
             font-size: 1.3em;
             font-weight: bold;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 (ímpar) */
+            background-color: lightgrey;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n (par)*/
+            background-color: white;
         }
     </style>
 </head>
