@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 10</title>
+    <title>Desafio 08</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Imagens dinâmicas</h1>
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
-        <img src="imagens/foto-g.png" alt="Sung Jin Woo">
-    </picture>
+    <h1>Desafio da Navegação</h1>
+    <p>Esta é a página principal, o índice do seu site. É a página cinza. A partir dela você pode acessar as outras áreas principais usando os links abaixo:</p>
+    <ul>
+        <li><a href="paginas/verde.html" target="_self" rel="next">Acessar a área verde</a></li>
+        <li><a href="paginas/amarelo.html" target="_self" rel="next">Acessar a área amarela</a></li>
+    </ul>
 </body>
 </html>
