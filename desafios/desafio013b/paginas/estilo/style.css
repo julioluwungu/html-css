@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+div#conteiner {
+    min-width: 40vw;
+    min-height: 500vh;
+}
+
+div#imagem {
+    min-width: 100vw;
+    min-height: 500vh;
+    margin: auto;
+    background: black no-repeat left top scroll;
+    background-size: contain;
+}
+
+div#link {
+    max-width: 50vw;
+    background-color: red;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
