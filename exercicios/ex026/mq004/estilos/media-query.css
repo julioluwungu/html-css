@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical devive breakpoints 
+------------------------------
+Mobile pequeno: 320px até 479px
+Mobile médio/grande: 480px até 768px
+Tablet retrato: 769px até 1024px
+Tablet paisagem/small laptop: 1025px até 1280px
+Desktop comum: 1281px até 1440px
+Telas grandes: 1441px ou mais
+*/
+
+@media print { /* Impressora */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do CursoemVideo';
+        text-decoration: overline;
+        text-align: center;
+    }
+
+    main h1 {
+        color: black;
+        border: none;
+    }
+
+    main img#print {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Celular */
+    body {
+        background-image: url('../imagens/back-phone.jpg');
+    }
+
+    main img#phone{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Tablet */
+    body {
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    main img#tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) { /* PC */
+    body {
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    main img#pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1441px) { /* TV */
+    body {
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    main img#tv {
+        display: block;
+    }
+}
