@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Estilos para Impressoras */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header menu {
+    display: none;
+}
+
+main article {
+    width: 100%;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main article::after {
+    content: 'Site impresso através do CursoemVideo';
+    font-size: 0.8em;
+    text-align: right;
+}
