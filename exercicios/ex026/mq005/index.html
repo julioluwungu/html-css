@@ -11,7 +11,7 @@
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined"  onclick="clickMenu()">menu</span>
-        <menu id="lista">
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -21,6 +21,7 @@
             </ul>
         </menu>
     </header>
+
     <main>
         <article>
             <h2>Testando Media Query</h2>
@@ -29,12 +30,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor reiciendis voluptatem a neque veniam tempore soluta non nihil accusamus explicabo dolore vitae quisquam minima repudiandae, magnam doloremque iste ipsa alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia laboriosam sint minus autem tempore. Aspernatur, cum. Minima totam cumque aspernatur, ipsum obcaecati magnam perspiciatis architecto aut laudantium sequi minus dignissimos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit alias ipsam impedit! Quibusdam quasi sit ea nesciunt consequuntur atque culpa, necessitatibus voluptatem quisquam in, nihil fuga? Assumenda ipsum sed numquam.</p>
         </article>
     </main>
+
     <script>
         function clickMenu() {
-            if (lista.style.display == 'block') {
-                lista.style.display = 'none'
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
             } else {
-                lista.style.display = 'block'
+                itens.style.display = 'block'
             }
         }
     </script>
