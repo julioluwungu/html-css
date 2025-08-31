@@ -33,6 +33,11 @@ header > span#burguer {
     cursor: pointer;
 }
 
+header > span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
 header > menu {
     display: none;
 }
