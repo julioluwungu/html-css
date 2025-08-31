@@ -27,6 +27,7 @@ header > span#burguer {
     display: block;
     background-color: rgb(48, 48, 48);
     color: white;
+    padding: 5px;
     text-align: center;
     font-weight: 900;
     cursor: pointer;
