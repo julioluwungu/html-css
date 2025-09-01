@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Definição das variáveis */
+
+:root {
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+/* Configurações gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor2);
+    font-size: 0.8em;
+    position: relative;
+    height: 97vh;
+}
+
+/* Configurações do main */
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+section#imagem {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px 20px 0px 0px;
+    background: url('../imagens/imagem.jpg') no-repeat center center ;
+    background-size: cover;
+}
+
+section#conteudo {
+    padding: 10px;
+}
+
+form {
+    display: block;
+    margin: auto;
+}
+
+label {
+    background-color: var(--cor2);
+}
+
+div.conteiner {
+    width: 90%;
+    height: 35px;
+    background-color: var(--cor2);
+    margin: 10px;
+    border-radius: 5px;
+    vertical-align: center;
+    position: relative;
+}
+
+div > label > span {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    color: white;
+    transform: translate(0%, -50%);
+}
+
+div > input {
+    position: absolute;
+    border: none;
+    height: 85%;
+    width: 82%;
+    top: 50%;
+    left: 37px;
+    right: 1px;
+    padding: 0px 0px 0px 5px;
+    border-radius: 5px;
+    transform: translate(0%, -50%);
+    background-color: var(--cor1);
+}
+
+div.botao {
+    height: 35px;
+    padding: 0px;
+}
+
+div.botao > input {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div#entrar > input {
+    color: white;
+}
+
+div#esquecer > input {
+    background-color: white;
+    color: var(--cor1);
+    border: 1px solid var(--cor1);
+}
