@@ -12,3 +12,23 @@ header > nav > a {
     width: 90vw;
     margin: 5px 10px;
 }
+
+header > nav {
+    display: none;
+}
+
+span.material-symbols-outlined {
+    display: block;
+    width: 100vw;
+    padding: 5px;
+    background-color: rgb(52, 52, 52);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+span:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s;
+}

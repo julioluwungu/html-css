@@ -60,6 +60,10 @@ header > nav > a:hover {
     transition: background-color 0.5s;
 }
 
+span.material-symbols-outlined {
+    display: none;
+}
+
 /* Configurações do Main */
 
 main {

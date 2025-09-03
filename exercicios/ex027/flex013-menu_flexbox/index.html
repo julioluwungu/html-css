@@ -6,11 +6,12 @@
     <title>Menu Flexbox</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 650px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
-        <nav>
+        <nav id="menu">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -19,10 +20,27 @@
             <a href="#">Opção 6</a>
         </nav>
     </header>
+    <span class="material-symbols-outlined" onclick="clicouMenu()">Menu</span>
     <main>
         <h2>Teste de Flexbox</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolor ut vero, incidunt eaque culpa voluptatum fugiat perferendis nostrum dolores aspernatur blanditiis velit. Eligendi, aliquid odio doloremque non nihil labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ullam unde nesciunt obcaecati esse non exercitationem eum ipsum dolore, nihil modi soluta corporis illum consequuntur, eligendi aperiam corrupti pariatur sunt.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores repellendus, rerum ducimus ullam officiis minus nisi ea dolorum doloribus impedit, adipisci quos quia amet optio, voluptatibus veritatis perspiciatis modi fugiat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, voluptate officia praesentium incidunt blanditiis, accusantium autem voluptatem recusandae voluptatum facere voluptates iure laborum exercitationem eligendi vel, quia ab. Similique, nobis.</p>
     </main>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 650) {
+                menu.style.display = 'flex'
+            }
+        }
+
+        function clicouMenu() {
+            if (menu.style.display == 'none') {
+                menu.style.display = 'flex'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
