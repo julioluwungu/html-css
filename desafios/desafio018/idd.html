@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passando o tempo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width:100vw;
+            font: 14px Helvetica, sans-serif;
+        }
+        
+        .flex-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header {
+            justify-content: space-between;
+
+            position: sticky;
+            top: 0;
+
+            height: 60px;
+            padding: 0 15px;
+        }
+
+        .header nav {
+            gap: 10px;
+        }
+
+        .header nav li {
+            list-style-type: none;
+        }
+
+        .header nav li a {
+            text-decoration: none;
+        }
+
+        .header nav li a.normal {
+            color: #808080;
+        }
+
+        .header nav li a.normal:hover {
+            color: #000;
+        }
+
+        .header nav li a.normal::after {
+            content: "";
+        }
+
+        .header nav li .row {
+            height: 32px;
+            width: 1.5px;
+            background-color: #0000005f;
+        }
+
+        .header nav li .login-button,
+        .header nav li .cadastro-button {
+            font-size: 13px;
+            padding: 8px 20px;
+            border-radius: 4px;
+            border: 1.9px solid #3676ff;
+            transition: all .3s ease-in-out;
+        }
+
+        .header nav li .login-button {
+            color: #fff;
+            background: #3676ff;
+        }
+
+        .header nav li .login-button:hover {
+            opacity: 0.8;
+        }
+
+        .header nav li .cadastro-button {
+            color: #3676ff;
+        }
+
+        .header nav li .cadastro-button:hover {
+            background: #3676ff;
+            color: #fff;
+        }
+
+        .central {
+            background-color: darkgrey;
+            position: sticky;
+            top: 0;
+        }
+
+        main {
+            background-color: rgb(8, 134, 245);
+        }
+
+        footer {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <header class="header flex-row">
+        <div class="logo">
+            <p>LogoTipo</p>
+        </div>
+        <nav class="flex-row">
+            <li>
+                <a class="normal" href="#">Servicos</a>
+            </li>
+            <li>
+                <a class="normal" href="#">Sobre</a>
+            </li>
+            <li>
+                <a class="normal" href="#">Fale connosco</a>
+            </li>
+            <li>
+                <a href="login/" class="login-button">Entrar</a>
+            </li>
+            <li>
+                <div class="row"></div>
+            </li>
+            <li>
+                <a href="entrar/" class="cadastro-button">Cadastre-se</a>
+            </li>
+        </nav>
+    </header>
+</body>
+</html>
