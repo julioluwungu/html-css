@@ -124,14 +124,16 @@ section#detalhes article {
   padding: 20px;
 }
 
-div.video {
+/* Configurações da Apresentação */
+
+div.video-conteiner {
   position: relative;
   width: 100%;
   aspect-ratio: 16/9;
   margin: auto;
 }
 
-div.video iframe {
+div.video-conteiner iframe {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -140,4 +142,56 @@ div.video iframe {
   border-radius: 5px;
 }
 
+/* Configurações das Skills */
+
+div#skills-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+div.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.info span.nome {
+  font-weight: bolder;
+  color: var(--texto);
+}
+
+div.info span.porcentagem {
+  font-weight: bolder;
+  color: var(--destaque);
+}
+
+div.barra {
+  width: 100%;
+  height: 10px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+div.barra div.progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+/* Configurações das Formações */
+
+
+
+/* Configurações dos Projetos */
+
+
+
 /* Configurações do Rodapé */
+
+/* Configurações adicionais */
+
+@media screen and (min-width: 768px) {
+  div#skills-conteiner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
