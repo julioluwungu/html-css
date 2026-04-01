@@ -180,7 +180,33 @@ div.barra div.progresso {
 
 /* Configurações das Formações */
 
+div#formacoes-conteiner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
 
+div#formacoes-conteiner div.curso {
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: all 0.8s;
+}
+
+div#formacoes-conteiner div.curso:hover {
+  border-left: 15px solid var(--destaque);
+  cursor: pointer;
+}
+
+div.curso p.periodo {
+  font-weight: bolder;
+  color: var(--texto);
+}
+
+div.curso h3.instituto {
+  color: var(--destaque-inverso);
+}
 
 /* Configurações dos Projetos */
 
