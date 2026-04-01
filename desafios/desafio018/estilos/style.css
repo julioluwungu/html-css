@@ -58,7 +58,8 @@ header > nav#menu a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: auto 90vw auto;
+  gap: 20px;
 }
 
 /* Configurações da Seção de Ficha */
@@ -67,7 +68,7 @@ section#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
-  grid-column: 2;
+  grid-column: 2 / 3;
   margin-top: 20px;
 }
 
@@ -92,6 +93,7 @@ section#ficha h1 {
 
 section#ficha p {
   text-align: justify;
+  hyphens: auto;
   margin-bottom: 15px;
 }
 
@@ -114,7 +116,7 @@ section#ficha div#social > a:hover {
 /* Configuração da Seção de Detalhes */
 
 section#detalhes {
-  grid-column: 2;
+  grid-column: 2 / 3;
 }
 
 article h2 {
@@ -284,6 +286,26 @@ footer a:hover {
 /* Configurações adicionais */
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+    margin-bottom: 20px;
+  }
+
+  section#ficha h1 {
+    font-size: 1.6em;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+
   div#skills-conteiner {
     grid-template-columns: 1fr 1fr;
   }
