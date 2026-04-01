@@ -75,6 +75,7 @@ section#ficha img.foto {
   width: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  overflow: hidden;
   border-radius: 50%;
   border: 3px solid var(--fundo-card);
   outline: 3px solid var(--destaque);
@@ -132,6 +133,7 @@ div.video-conteiner {
   width: 100%;
   aspect-ratio: 16/9;
   margin: auto;
+  overflow: hidden;
 }
 
 div.video-conteiner iframe {
@@ -212,14 +214,95 @@ div.curso h3.instituicao {
 
 /* Configurações dos Projetos */
 
+div#projetos-conteiner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
 
+div.projeto {
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.8s;
+}
 
-/* Configurações do Rodapé */
+div.projeto:hover {
+  border-left: 15px solid var(--destaque);
+}
+
+div.projeto div.imagem {
+  width: 100%;
+}
+
+div.imagem a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div.projeto img.foto {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+div.projeto summary {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Configurações do Footer */
+
+footer {
+  background-color: var(--destaque);
+  text-align: center;
+  padding: 15px;
+  color: var(--texto-inverso);
+}
+
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bolder;
+  transition: all 0.8s;
+}
+
+footer a:hover {
+  color: var(--destaque-inverso);
+  text-decoration: underline;
+}
 
 /* Configurações adicionais */
 
 @media screen and (min-width: 768px) {
   div#skills-conteiner {
     grid-template-columns: 1fr 1fr;
+  }
+
+  div.projeto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  div.projeto div.projeto-info {
+    width: 80%;
+  }
+
+  div.projeto div.imagem {
+    width: 20%;
+    height: 100%;
+    align-self: center;
+  }
+
+  div.projeto img.foto {
+    width: 100%;
+    aspect-ratio: 1/1;
+    max-height: 200px;
   }
 }
